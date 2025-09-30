@@ -1,0 +1,174 @@
+/* Mobile*/
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 1.8em;
+    position: relative; 
+    color: var(--color-background-meduim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  } 
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute; 
+    top: 40px;   
+    right: 0;         
+    width: 200px;      
+    background-color: var(--color-navbar);
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .navigation.show {
+    display: flex;
+  }
+  .navigation a {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  #contact{
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  .navigation a#contact {
+    padding:8px 15px; 
+    font-size: 0.9em;  
+    margin-left: 0;
+  } 
+
+  .navigation a:hover {
+    background-color: var(--color-background-meduim);
+    color: var(--color-title);
+  }
+  .section { 
+    padding: 60px 20px;
+  }
+  #main-section {
+    flex-direction: column; 
+    align-items: center;   
+    padding-top: 60px;
+    gap: 20px;             
+  }
+
+  #main-section > div:first-child {
+    align-self:flex-end; 
+  }
+
+  #main-section h2 {
+    font-size: 1.6em;
+  } 
+
+  #main-section h2 span {
+    font-size: 2em;
+    display: block;
+    margin-top: 5px;
+  }
+
+  #main-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+    #main-section > div.avatar {
+    order: -1; 
+    margin-bottom: 20px; 
+    width: 180px;
+    height: 180px;
+  }
+
+  .main-btn,
+  .cv-btn {
+    padding: 12px 25px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+  } 
+}
+  #my-education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;  
+    gap: 10px;
+  }
+
+  #my-education > div:last-child {
+    flex: none;      
+    width: auto;     
+  }
+
+  #my-education .education-items {
+    margin-bottom: 50px;
+    border-left: 3px solid var(--color-title);
+    padding-left: 10px;
+    width: auto;     
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-container form,
+  .contact-info {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .section {
+    padding: 80px 100px;
+  }
+  header {
+    padding: 10px 100px;
+  }
+  #main-section {
+    flex-wrap: nowrap; 
+  }
+  
+}
+/* Labtob */
+@media (min-width: 1025px) {
+  header {
+    padding: 10px 200px;
+  }
+  .navgation {
+    display: flex ;
+  }
+
+  .contact-container {
+    display: flex ;       
+    flex-direction: row ; 
+    justify-content: center ;      
+    align-items: center;        
+    gap: 50px;                      
+    flex-wrap: nowrap;              
+  }
+  .contact-container form {
+    margin-left: 100px;
+    width: 40%;   
+    margin: 0;
+  }
+  .contact-info {
+    width: 35%;   
+    text-align: left;  
+    margin: 100px 0 70px 40px;
+  }
+
+}
+
+
